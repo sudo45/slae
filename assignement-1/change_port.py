@@ -15,7 +15,7 @@ if port < 1024 or port > 65535:
     sys.exit(-1)
 
 no_port = socket.htons(port);
-hex_no_port = hex(no_port)
+hex_no_port = "{0:#0{1}x}".format(no_port,6)
 
 h1 = hex_no_port[2:4]
 h2 = hex_no_port[4:6]
