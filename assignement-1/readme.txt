@@ -1,4 +1,4 @@
-Assignement 1:
+Assignement 1 (SLAE ID - 1245):
 - Create a bind TCP shellcode
   1) binds to a port
   2) execs shell on incoming connection
